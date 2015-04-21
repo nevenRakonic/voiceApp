@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="59N-g6-YbP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,6 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qol-r5-89w"/>
+                                    <segue destination="Uaa-qX-40b" kind="show" id="qy0-e8-5cI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,6 +52,7 @@
                             <constraint firstItem="ya3-lE-2lg" firstAttribute="top" secondItem="AFf-fW-2FH" secondAttribute="bottom" constant="13" id="i8D-bg-hY6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Record" id="zO4-rk-GKs"/>
                     <connections>
                         <outlet property="recordButton" destination="6MS-gM-ytm" id="Rax-bv-0bi"/>
                         <outlet property="recordingInProgress" destination="AFf-fW-2FH" id="v4B-2T-4mk"/>
@@ -59,7 +61,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298.5" y="405"/>
+            <point key="canvasLocation" x="1110" y="405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NFV-a9-JdR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="59N-g6-YbP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="72C-Iv-Jge">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="BeH-ve-BiF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6be-Jc-HOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="405"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MTA-3g-rfp">
+            <objects>
+                <viewController id="Uaa-qX-40b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91Z-PF-1BH"/>
+                        <viewControllerLayoutGuide type="bottom" id="YWD-69-Cii"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zrE-QU-gSV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYk-Pt-0nS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="405"/>
         </scene>
     </scenes>
     <resources>
