@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="298" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="MTA-3g-rfp">
             <objects>
-                <viewController id="Uaa-qX-40b" sceneMemberID="viewController">
+                <viewController id="Uaa-qX-40b" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="91Z-PF-1BH"/>
                         <viewControllerLayoutGuide type="bottom" id="YWD-69-Cii"/>
@@ -92,6 +92,14 @@
                     <view key="view" contentMode="scaleToFill" id="zrE-QU-gSV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2T-Sr-a2i">
+                                <rect key="frame" x="96" y="131" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
