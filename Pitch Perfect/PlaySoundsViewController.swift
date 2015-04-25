@@ -32,6 +32,9 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func stopButton(sender: AnyObject) {
+        audioPlayer.stop()
+    }
     @IBAction func slowButton(sender: UIButton) {
         audioPlayer.stop()
         audioPlayer.rate = 0.5
@@ -39,6 +42,11 @@ class PlaySoundsViewController: UIViewController {
         
     }
     
+    @IBAction func fastButton(sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.rate = 2
+        audioPlayer.play()
+    }
 
     /*
     // MARK: - Navigation
