@@ -12,17 +12,20 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
 
     var audioPlayer = AVAudioPlayer()
+    var receivedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
-            var fileURL = NSURL(fileURLWithPath: filePath)
-            audioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
-            audioPlayer.enableRate = true
-            audioPlayer.prepareToPlay()
-        } else {
-            println("file didn't load")
-        }
+//        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+//            var fileURL = NSURL(fileURLWithPath: filePath)
+//        } else {
+//            println("file didn't load")
+//        }
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioPlayer.enableRate = true
+        audioPlayer.prepareToPlay()
+
 
         // Do any additional setup after loading the view.
     }
