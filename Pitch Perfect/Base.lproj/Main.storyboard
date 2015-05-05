@@ -130,16 +130,27 @@
                                     <action selector="playChipmunkAudio:" destination="Uaa-qX-40b" eventType="touchUpInside" id="zhy-1h-G5u"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAx-Bg-Msg">
+                                <rect key="frame" x="384" y="329" width="100" height="100"/>
+                                <state key="normal" image="DarthVader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVaderAudio:" destination="Uaa-qX-40b" eventType="touchUpInside" id="hcK-ky-XLQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q0X-NJ-801" secondAttribute="trailing" constant="150" id="1jw-Qm-Abd"/>
                             <constraint firstItem="Miv-FC-AnJ" firstAttribute="leading" secondItem="zrE-QU-gSV" secondAttribute="leadingMargin" constant="30" id="5vX-zI-Qpa"/>
                             <constraint firstItem="Z2T-Sr-a2i" firstAttribute="leading" secondItem="zrE-QU-gSV" secondAttribute="leadingMargin" constant="30" id="CLe-6D-tUc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CAx-Bg-Msg" secondAttribute="trailing" constant="30" id="Odr-kj-Q2g"/>
                             <constraint firstItem="l2q-9r-B25" firstAttribute="top" secondItem="91Z-PF-1BH" secondAttribute="bottom" constant="60" id="cvd-7q-DYJ"/>
                             <constraint firstItem="Miv-FC-AnJ" firstAttribute="top" secondItem="Z2T-Sr-a2i" secondAttribute="bottom" constant="105" id="fdY-zo-Th3"/>
                             <constraint firstItem="YWD-69-Cii" firstAttribute="top" secondItem="Q0X-NJ-801" secondAttribute="bottom" constant="92" id="j8U-sO-MwX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="l2q-9r-B25" secondAttribute="trailing" constant="30" id="lq9-zu-ECT"/>
+                            <constraint firstItem="CAx-Bg-Msg" firstAttribute="top" secondItem="l2q-9r-B25" secondAttribute="bottom" constant="105" id="o4O-Y5-tI0"/>
                             <constraint firstItem="Z2T-Sr-a2i" firstAttribute="top" secondItem="91Z-PF-1BH" secondAttribute="bottom" constant="60" id="xkE-9o-f27"/>
                         </constraints>
                     </view>
@@ -152,6 +163,7 @@
     <resources>
         <image name="Chipmunk" width="100" height="100"/>
         <image name="Close" width="50" height="50"/>
+        <image name="DarthVader" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Rabbit" width="100" height="100"/>
         <image name="Snail" width="100" height="100"/>
