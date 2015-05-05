@@ -121,12 +121,23 @@
                                     <action selector="stopButton:" destination="Uaa-qX-40b" eventType="touchUpInside" id="H7d-pM-32X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miv-FC-AnJ">
+                                <rect key="frame" x="124" y="329" width="155" height="100"/>
+                                <state key="normal" image="Chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="Uaa-qX-40b" eventType="touchUpInside" id="zhy-1h-G5u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q0X-NJ-801" secondAttribute="trailing" constant="150" id="1jw-Qm-Abd"/>
+                            <constraint firstItem="Miv-FC-AnJ" firstAttribute="leading" secondItem="zrE-QU-gSV" secondAttribute="leadingMargin" constant="30" id="5vX-zI-Qpa"/>
                             <constraint firstItem="Z2T-Sr-a2i" firstAttribute="leading" secondItem="zrE-QU-gSV" secondAttribute="leadingMargin" constant="30" id="CLe-6D-tUc"/>
                             <constraint firstItem="l2q-9r-B25" firstAttribute="top" secondItem="91Z-PF-1BH" secondAttribute="bottom" constant="60" id="cvd-7q-DYJ"/>
+                            <constraint firstItem="Miv-FC-AnJ" firstAttribute="top" secondItem="Z2T-Sr-a2i" secondAttribute="bottom" constant="105" id="fdY-zo-Th3"/>
                             <constraint firstItem="YWD-69-Cii" firstAttribute="top" secondItem="Q0X-NJ-801" secondAttribute="bottom" constant="92" id="j8U-sO-MwX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="l2q-9r-B25" secondAttribute="trailing" constant="30" id="lq9-zu-ECT"/>
                             <constraint firstItem="Z2T-Sr-a2i" firstAttribute="top" secondItem="91Z-PF-1BH" secondAttribute="bottom" constant="60" id="xkE-9o-f27"/>
@@ -139,6 +150,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="100" height="100"/>
         <image name="Close" width="50" height="50"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Rabbit" width="100" height="100"/>

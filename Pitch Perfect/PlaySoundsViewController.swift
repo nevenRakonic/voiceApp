@@ -16,11 +16,6 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
-//            var fileURL = NSURL(fileURLWithPath: filePath)
-//        } else {
-//            println("file didn't load")
-//        }
         
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
@@ -38,11 +33,15 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopButton(sender: AnyObject) {
         audioPlayer.stop()
     }
+    
     @IBAction func slowButton(sender: UIButton) {
         audioPlayer.stop()
         audioPlayer.rate = 0.5
         audioPlayer.play()
         
+    }
+    
+    @IBAction func playChipmunkAudio(sender: AnyObject) {
     }
     
     @IBAction func fastButton(sender: UIButton) {
